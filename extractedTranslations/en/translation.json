@@ -2,5 +2,8 @@
   "404": "404",
   "about": "about",
   "language": "language",
-  "mainPage": "mainPage"
+  "mainPage": "mainPage",
+  "pageError": "pageError",
+  "reloadPage": "reloadPage",
+  "throw-error": "throw-error"
 }

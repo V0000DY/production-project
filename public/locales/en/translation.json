@@ -4,5 +4,8 @@
   "mainPage": "Main page",
   "language": "English",
   "main": "Home",
-  "about": "About"
+  "about": "About",
+  "pageError": "An unforeseen mistake occurred",
+  "reloadPage": "Update the page",
+  "throw-error": "Throw error"
 }
