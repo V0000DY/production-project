@@ -1,8 +1,9 @@
 import { classNames } from "shared/lib/ClassNames/classNames";
-import cls from "./Button.module.scss";
 import { ButtonHTMLAttributes, FC } from "react";
+import cls from "./Button.module.scss";
 
 export enum ThemeButton {
+  // eslint-disable-next-line no-unused-vars
   CLEAR = "clear",
 }
 
@@ -15,7 +16,9 @@ export const Button: FC<ButtonProps> = (props) => {
   const { className, children, theme, ...otherProps } = props;
   return (
     <button
+      type="button"
       className={classNames(cls.Button, {}, [className, cls[theme]])}
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...otherProps}
     >
       {children}
