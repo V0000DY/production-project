@@ -13,7 +13,17 @@ jobs:
         node-version: [17.x]
     steps:
       - uses: actions/checkout@v3
-      -  name: Staring Node.js ${{ matrix.node-version }}
+      - name: Staring Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: npm install
+      - name: Build production project
+        run: npm run build:prod
+      - name: Linting typescript
+        run: npm run lint:ts
+      - name: Linting scss
+        run: npm run lint:scss
+      - name: Unit tests
+        run: npm run test:unit
