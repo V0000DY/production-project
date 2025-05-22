@@ -7,5 +7,6 @@
   "about": "About",
   "pageError": "An unforeseen mistake occurred",
   "reloadPage": "Update the page",
-  "throw-error": "Throw error"
+  "throw-error": "Throw error",
+  "toggle": "Toggle"
 }
