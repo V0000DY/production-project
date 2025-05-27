@@ -10,5 +10,7 @@
   "throw-error": "Выбросить ошибку",
   "toggle": "Переключить",
   "languageShort": "Ру",
-  "Enter": "Войти"
+  "Enter": "Войти",
+  "increment": "Прибавить",
+  "decrement": "Убавить"
 }

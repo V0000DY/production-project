@@ -10,5 +10,7 @@
   "throw-error": "Throw error",
   "toggle": "Toggle",
   "languageShort": "En",
-  "Enter": "Enter"
+  "Enter": "Enter",
+  "increment": "Increment",
+  "decrement": "Decrement"
 }

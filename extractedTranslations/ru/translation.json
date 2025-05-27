@@ -2,6 +2,8 @@
   "404": "404",
   "Enter": "Enter",
   "about": "about",
+  "decrement": "decrement",
+  "increment": "increment",
   "language": "language",
   "mainPage": "mainPage",
   "pageError": "pageError",
