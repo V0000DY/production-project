@@ -12,5 +12,8 @@
   "languageShort": "En",
   "Enter": "Enter",
   "increment": "Increment",
-  "decrement": "Decrement"
+  "decrement": "Decrement",
+  "login": "Login",
+  "Enter username": "Enter username",
+  "Enter password": "Enter password"
 }

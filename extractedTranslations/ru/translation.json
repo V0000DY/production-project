@@ -1,10 +1,13 @@
 {
   "404": "404",
   "Enter": "Enter",
+  "Enter password": "Enter password",
+  "Enter username": "Enter username",
   "about": "about",
   "decrement": "decrement",
   "increment": "increment",
   "language": "language",
+  "login": "login",
   "mainPage": "mainPage",
   "pageError": "pageError",
   "reloadPage": "reloadPage",

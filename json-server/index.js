@@ -20,7 +20,6 @@ server.use(async (req, res, next) => {
 // Эндпоинт для логина
 server.post("/login", (req, res) => {
   try {
-    console.log(JSON.stringify(req.body));
     const { username, password } = req.body;
     const db = JSON.parse(
       fs.readFileSync(path.resolve(__dirname, "db.json"), "UTF-8")
