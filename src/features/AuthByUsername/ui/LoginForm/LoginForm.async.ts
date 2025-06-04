@@ -1,14 +1,14 @@
-import { lazy } from "react";
+import { FC, lazy } from "react";
+import { LoginFormProps } from "./LoginForm";
 
-export const AboutPageAsync = lazy(
+export const LoginFormAsync = lazy<FC<LoginFormProps>>(
   () =>
     // eslint-disable-next-line implicit-arrow-linebreak
     new Promise(
       (resolve) =>
-        // В реальном проекте так не делать!!!
         // @ts-ignore
         // eslint-disable-next-line no-promise-executor-return, implicit-arrow-linebreak
-        setTimeout(() => resolve(import("./AboutPage")), 2000)
+        setTimeout(() => resolve(import("./LoginForm")), 2000)
       // eslint-disable-next-line function-paren-newline
     )
 );
