@@ -13,6 +13,7 @@
   "login": "login",
   "mainPage": "mainPage",
   "pageError": "pageError",
+  "profilePage": "profilePage",
   "reloadPage": "reloadPage",
   "throw-error": "throw-error",
   "toggle": "toggle"
