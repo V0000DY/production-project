@@ -30,7 +30,7 @@
 
 .opened {
   opacity: 1;
-  pointer-events: all;
+  pointer-events: auto;
   z-index: var(--modal-z-index);
 
   .content {

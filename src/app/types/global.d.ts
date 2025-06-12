@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 declare module "*.scss" {
   interface IClassNames {
     [className: string]: string;
@@ -17,3 +18,10 @@ declare module "*.svg" {
 }
 
 declare const __IS_DEV__: boolean;
+declare const __API__: string;
+
+type DeepPartial<T> = T extends object
+  ? {
+      [P in keyof T]?: DeepPartial<T[P]>;
+    }
+  : T;

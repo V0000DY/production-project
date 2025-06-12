@@ -8,7 +8,7 @@ import { AppRouter } from "./providers/router";
 import { useTheme } from "./providers/ThemeProvider";
 
 function App() {
-  const { theme } = useTheme(); // Вот добавил тему, хотя в видео этого не было (разобраться)!!!
+  const { theme } = useTheme();
   const dispatch = useDispatch();
 
   useEffect(() => {

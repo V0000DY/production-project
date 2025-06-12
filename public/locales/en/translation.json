@@ -3,8 +3,8 @@
   "translate": "Translate",
   "mainPage": "Main page",
   "language": "English",
-  "main": "Home",
-  "about": "About",
+  "Main": "Home",
+  "About": "About",
   "pageError": "An unforeseen mistake occurred",
   "reloadPage": "Update the page",
   "throw-error": "Throw error",
@@ -18,5 +18,9 @@
   "Enter password": "Enter password",
   "Sign in form": "Sign in form",
   "Login error": "You enter uncorrect login or password",
-  "Exit": "Exit"
+  "Exit": "Exit",
+  "Profile": "Profile",
+  "Edit": "Edit",
+  "profile_Name": "Name",
+  "profile_Lastname": "Lastname"
 }
