@@ -22,5 +22,16 @@
   "Profile": "Профиль",
   "Edit": "Редактировать",
   "profile_Name": "Имя",
-  "profile_Lastname": "Фамилия"
+  "profile_Lastname": "Фамилия",
+  "profile_load_error": "Произошла ошибка во время загрузки профиля",
+  "profile_reload": "Попробуйте перезагрузить страницу",
+  "Cancel": "Отмена",
+  "Save": "Сохранить",
+  "profile_Age": "Возраст",
+  "profile_City": "Город",
+  "profile_Username": "Имя пользователя",
+  "profile_AvatarLink": "Ссылка на аватар",
+  "profile_Avatar": "Аватар пользователя",
+  "profile_Currency": "Валюта",
+  "profile_Country": "Страна"
 }

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 const AboutPage = memo(() => {
   const { t } = useTranslation();
-  return <div>{t("about")}</div>;
+  return <div>{t("About")}</div>;
 });
 
 export default AboutPage;

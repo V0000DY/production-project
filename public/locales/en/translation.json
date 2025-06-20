@@ -22,5 +22,16 @@
   "Profile": "Profile",
   "Edit": "Edit",
   "profile_Name": "Name",
-  "profile_Lastname": "Lastname"
+  "profile_Lastname": "Lastname",
+  "profile_load_error": "There was an error when loading the profile",
+  "profile_reload": "Try to update the page",
+  "Cancel": "Cancel",
+  "Save": "Save",
+  "profile_Age": "Age",
+  "profile_City": "City",
+  "profile_Username": "Username",
+  "profile_AvatarLink": "Link to the avatar",
+  "profile_Avatar": "User avatar",
+  "profile_Currency": "Currency",
+  "profile_Country": "Country"
 }
