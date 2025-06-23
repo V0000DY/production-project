@@ -28,8 +28,13 @@
   "profile_Lastname": "profile_Lastname",
   "profile_Name": "profile_Name",
   "profile_Username": "profile_Username",
+  "profile_incorrect_age": "profile_incorrect_age",
+  "profile_incorrect_country": "profile_incorrect_country",
+  "profile_incorrect_user_data": "profile_incorrect_user_data",
   "profile_load_error": "profile_load_error",
+  "profile_no_data": "profile_no_data",
   "profile_reload": "profile_reload",
+  "profile_server_error": "profile_server_error",
   "reloadPage": "reloadPage",
   "throw-error": "throw-error",
   "toggle": ""

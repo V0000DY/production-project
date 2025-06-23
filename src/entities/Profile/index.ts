@@ -1,3 +1,4 @@
+export { getProfileValidateErrors } from "./model/selectors/getProfileValidateErrors/getProfileValidateErrors";
 export { getProfileForm } from "./model/selectors/getProfileForm/getProfileForm";
 export { getProfileReadonly } from "./model/selectors/getProfileReadonly/getProfileReadonly";
 export { getProfileData } from "./model/selectors/getProfileData/getProfileData";

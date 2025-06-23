@@ -33,5 +33,10 @@
   "profile_AvatarLink": "Ссылка на аватар",
   "profile_Avatar": "Аватар пользователя",
   "profile_Currency": "Валюта",
-  "profile_Country": "Страна"
+  "profile_Country": "Страна",
+  "profile_incorrect_age": "Некорректный возраст",
+  "profile_incorrect_user_data": "Имя и фамилия обязательны",
+  "profile_no_data": "Данные не указаны",
+  "profile_incorrect_country": "Некорректный регион",
+  "profile_server_error": "Серверная ошибка при сохранении"
 }
