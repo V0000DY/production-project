@@ -5,9 +5,10 @@ import { MainPage } from "pages/MainPage";
 import { NotFoundPage } from "pages/NotFoundPage";
 import { ProfilePage } from "pages/ProfilePage";
 
-type AppRouteProps = RouteProps & {
+export type AppRouteProps = RouteProps & {
   authOnly?: boolean;
 };
+
 export enum AppRoutes {
   MAIN = "main",
   ABOUT = "about",
