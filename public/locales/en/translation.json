@@ -5,6 +5,7 @@
   "language": "English",
   "Main": "Home",
   "About": "About",
+  "Articles": "Articles",
   "pageError": "An unforeseen mistake occurred",
   "reloadPage": "Update the page",
   "throw-error": "Throw error",
