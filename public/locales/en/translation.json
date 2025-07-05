@@ -39,5 +39,9 @@
   "profile_incorrect_user_data": "Required firstname and lastname",
   "profile_no_data": "No data asigned",
   "profile_incorrect_country": "Incorrect region",
-  "profile_server_error": "Server error while saving"
+  "profile_server_error": "Server error while saving",
+  "Article not found": "Article not found",
+  "loading": "Loading...",
+  "error": "Error",
+  "article_error": "An error occured wwhile article loading"
 }

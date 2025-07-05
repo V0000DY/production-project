@@ -1,9 +1,9 @@
+/* eslint-disable no-unused-vars */
 import { classNames, Mods } from "shared/lib/ClassNames/classNames";
 import { ButtonHTMLAttributes, memo, ReactNode } from "react";
 import cls from "./Button.module.scss";
 
 export enum ButtonTheme {
-  // eslint-disable-next-line no-unused-vars
   CLEAR = "clear",
   CLEAR_INVERTED = "clearInvertred",
   OUTLINE = "outline",

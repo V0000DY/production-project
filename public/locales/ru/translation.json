@@ -39,5 +39,9 @@
   "profile_incorrect_user_data": "Имя и фамилия обязательны",
   "profile_no_data": "Данные не указаны",
   "profile_incorrect_country": "Некорректный регион",
-  "profile_server_error": "Серверная ошибка при сохранении"
+  "profile_server_error": "Серверная ошибка при сохранении",
+  "Article not found": "Статья не найдена",
+  "loading": "Загрузка...",
+  "error": "Ошибка",
+  "article_error": "Произошла ошибка при загрузке статьи"
 }
