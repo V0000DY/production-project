@@ -43,5 +43,7 @@
   "Article not found": "Article not found",
   "loading": "Loading...",
   "error": "Error",
-  "article_error": "An error occured wwhile article loading"
+  "article_error": "An error occured wwhile article loading",
+  "Comments": "Comments",
+  "No comments": "No comments"
 }
