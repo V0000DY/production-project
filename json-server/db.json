@@ -20,7 +20,9 @@
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -101,6 +103,36 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "2"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Test_1",
+      "id": "-Yyeyrz"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Test_2",
+      "id": "F3pkcma"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "привет мир!",
+      "id": "lNxc8QF"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "хехехе",
+      "id": "PGeJ-wu"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "ваыаыв",
+      "id": "yP-oYiP"
     }
   ],
   "users": [
@@ -109,24 +141,38 @@
       "username": "admin",
       "password": "123",
       "role": "ADMIN",
-      "avatar": "https://avatars.mds.yandex.net/get-zen_doc/3413519/pub_5ff887b2fe4e686f6ae6ba3f_5ff887d7f906b16872a69755/scale_1200"
+      "avatar": "https://www.shutterstock.com/shutterstock/videos/1103457847/thumb/1.jpg?ip=x480"
     },
     {
       "id": "2",
-      "username": "user",
+      "username": "ulba bulba",
       "password": "123",
       "role": "USER",
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
-  "profile": {
-    "first": "Евгений",
-    "lastname": "Витамин",
-    "age": 38,
-    "currency": "USD",
-    "country": "Russia",
-    "city": "Северск",
-    "username": "admin",
-    "avatar": "https://t3.ftcdn.net/jpg/03/49/09/54/360_F_349095481_L0jLoQcuHrDD82wOfsXRX6whtuitdPOp.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Еврик",
+      "lastname": "Шариков",
+      "age": 38,
+      "currency": "USD",
+      "country": "Russia",
+      "city": "Северск",
+      "username": "admin",
+      "avatar": "https://www.shutterstock.com/shutterstock/videos/1103457847/thumb/1.jpg?ip=x480"
+    },
+    {
+      "id": "2",
+      "first": "Евгений",
+      "lastname": "Витамин",
+      "age": 38,
+      "currency": "USD",
+      "country": "Russia",
+      "city": "Северск",
+      "username": "ulba bulba",
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+    }
+  ]
 }

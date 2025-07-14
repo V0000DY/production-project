@@ -45,5 +45,7 @@
   "error": "Error",
   "article_error": "An error occured wwhile article loading",
   "Comments": "Comments",
-  "No comments": "No comments"
+  "No comments": "No comments",
+  "Enter your comment": "Enter your comment",
+  "Send": "Send"
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { ThunkConfig } from "app/providers/StoreProvider";
 import { User, userActions } from "entities/User";
@@ -31,6 +32,7 @@ export const loginByUsername = createAsyncThunk<
 
     return response.data;
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.log(error);
     return rejectWithValue("error");
   }
