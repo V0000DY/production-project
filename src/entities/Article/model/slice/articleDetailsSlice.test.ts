@@ -10,7 +10,10 @@ const data = {
   img: "img",
   views: 123,
   createdAt: "date",
-  userId: "1",
+  user: {
+    id: "1",
+    username: "admin",
+  },
   type: [ArticleType.IT],
   blocks: [],
 };

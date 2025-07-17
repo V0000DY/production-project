@@ -1,0 +1,15 @@
+.BIG {
+  .card {
+    margin-block-end: 2rem;
+  }
+}
+
+.SMALL {
+  display: flex;
+  flex-wrap: wrap;
+
+  .card {
+    margin-inline-end: 2rem;
+    margin-block-end: 2rem;
+  }
+}

@@ -1,3 +1,5 @@
+import { User } from "entities/User";
+
 /* eslint-disable no-unused-vars */
 export enum ArticleType {
   IT = "IT",
@@ -38,14 +40,19 @@ export type ArticleBlock =
   | ArticleCodeBlock
   | ArticleImageBlock;
 
+export enum ArticleView {
+  BIG = "BIG",
+  SMALL = "SMALL",
+}
+
 export interface Article {
   id: string;
   title: string;
+  user: User;
   subtitle: string;
   img: string;
   views: number;
   createdAt: string;
-  userId: string;
   type: ArticleType[];
   blocks: ArticleBlock[];
 }
