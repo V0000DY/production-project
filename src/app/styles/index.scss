@@ -19,11 +19,3 @@ body {
 .content-page {
   display: flex;
 }
-
-.page-wrapper {
-  flex-grow: 1;
-  padding: 1.5rem 1.5rem 1.5rem 3rem;
-  height: calc(100vh - var(--navbar-height));
-  overflow-y: auto;
-  flex-shrink: 100;
-}
