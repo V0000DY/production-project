@@ -19,13 +19,13 @@ import {
   getArticles,
 } from "../../model/slices/articlesPageSlice";
 import cls from "./ArticlesPage.module.scss";
-import { fetchArticlesList } from "../../model/services/fetchArticlesList/fetchArticlesList";
 import {
   getArticlesPageError,
   getArticlesPageIsLoading,
   getArticlesPageView,
 } from "../../model/selectors/articlePageSelectors";
 import { fetchNextArticlesPage } from "../../model/services/fetchNextArticlesPage/fetchNextArticlesPage";
+import { initArticlesPage } from "../../model/services/initArticlesPage/initArticlesPage";
 
 interface ArticlesPageProps {
   className?: string;
@@ -55,12 +55,7 @@ const ArticlesPage = (props: ArticlesPageProps) => {
   }, [dispatch]);
 
   useInitialEffect(() => {
-    dispatch(articlesPageActions.initState());
-    dispatch(
-      fetchArticlesList({
-        page: 1,
-      })
-    );
+    dispatch(initArticlesPage());
   });
 
   if (error) {
@@ -68,7 +63,7 @@ const ArticlesPage = (props: ArticlesPageProps) => {
   }
 
   return (
-    <DynamicModuleLoader reducers={reducers}>
+    <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
       <Page
         onScrollEnd={onLoadNextPart}
         className={classNames(cls.ArticlesPage, {}, [className])}
