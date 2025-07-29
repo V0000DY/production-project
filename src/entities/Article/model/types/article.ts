@@ -1,7 +1,14 @@
 import { User } from "entities/User";
 
 /* eslint-disable no-unused-vars */
+export enum ArticleSortField {
+  VIEWS = "views",
+  TITLE = "title",
+  CREATED = "createdAt",
+}
+
 export enum ArticleType {
+  ALL = "ALL",
   IT = "IT",
   SCIENCE = "SCIENCE",
   ECONOMICS = "ECONOMICS",

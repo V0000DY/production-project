@@ -1,5 +1,7 @@
 import { memo } from "react";
 import { classNames } from "shared/lib/ClassNames/classNames";
+import { Text, TextSize } from "shared/ui/Text/Text";
+import { t } from "i18next";
 import { Article, ArticleView } from "../../model/types/article";
 import cls from "./ArticleList.module.scss";
 import { ArticleListItem } from "../ArticleListItem/ArticleListItem";
@@ -27,9 +29,16 @@ export const ArticleList = memo((props: ArticleListProps) => {
       article={article}
       view={view}
       className={cls.card}
-      // isLoading={isLoading}
     />
   );
+
+  if (!isLoading && !articles.length) {
+    return (
+      <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
+        <Text title={t("No articles")} size={TextSize.L} />
+      </div>
+    );
+  }
 
   return (
     <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useCallback, useRef } from "react";
 
 export function useThrottle(callback: (...args: any[]) => void, delay: number) {
