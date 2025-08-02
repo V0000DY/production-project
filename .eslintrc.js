@@ -13,7 +13,13 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint", "i18next", "react-hooks"],
+  plugins: [
+    "react",
+    "@typescript-eslint",
+    "i18next",
+    "react-hooks",
+    "vitaly-plugin",
+  ],
   rules: {
     quotes: ["warn", "double"],
     "react/jsx-filename-extension": [
@@ -43,6 +49,7 @@ module.exports = {
     "react-hooks/exhaustive-deps": "error",
     "no-param-reassign": "off",
     "no-undef": "off",
+    "vitaly-plugin/path-checker": "error",
     "i18next/no-literal-string": [
       "error",
       {
