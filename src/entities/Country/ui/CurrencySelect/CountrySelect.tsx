@@ -40,7 +40,7 @@ export const CountrySelect = memo(
         items={options}
         onChange={onChangeHandler}
         readonly={readonly}
-        direction="top"
+        direction="top right"
         label={t("profile_Country")}
       />
     );
