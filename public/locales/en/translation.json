@@ -65,5 +65,7 @@
   "No articles": "There are no articles",
   "Recommendations": "Recommendations",
   "AppName": "BlogPost",
-  "Create article": "Create article"
+  "Create article": "Create article",
+  "Error while loading articles": "Error while loading articles",
+  "profile_error": "Profile error"
 }

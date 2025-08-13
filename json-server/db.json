@@ -627,7 +627,7 @@
       "username": "admin",
       "password": "123",
       "role": "ADMIN",
-      "avatar": "https://www.shutterstock.com/shutterstock/videos/1103457847/thumb/1.jpg?ip=x480"
+      "avatar": "https://cdn-icons-png.flaticon.com/512/924/924915.png"
     },
     {
       "id": "2",
@@ -640,14 +640,14 @@
   "profile": [
     {
       "id": "1",
-      "first": "Еврик",
-      "lastname": "Шариков",
+      "first": "Ulbi",
+      "lastname": "Hacker",
       "age": 38,
       "currency": "EUR",
       "country": "Georgia",
       "city": "Северск",
       "username": "admin",
-      "avatar": "https://www.shutterstock.com/shutterstock/videos/1103457847/thumb/1.jpg?ip=x480"
+      "avatar": "https://cdn-icons-png.flaticon.com/512/924/924915.png"
     },
     {
       "id": "2",

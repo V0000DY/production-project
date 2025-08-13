@@ -65,5 +65,7 @@
   "No articles": "Статьи не найдены",
   "Recommendations": "Рекомендуем",
   "AppName": "БлогПост",
-  "Create article": "Создать статью"
+  "Create article": "Создать статью",
+  "Error while loading articles": "Ошибка при загрузке статей",
+  "profile_error": "Профиль не найден"
 }
