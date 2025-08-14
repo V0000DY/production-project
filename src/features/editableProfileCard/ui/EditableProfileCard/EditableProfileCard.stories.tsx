@@ -11,6 +11,7 @@ export default {
 } as ComponentMeta<typeof EditableProfileCard>;
 
 const Template: ComponentStory<typeof EditableProfileCard> = (args) => (
+  // eslint-disable-next-line react/jsx-props-no-spreading
   <EditableProfileCard {...args} />
 );
 
