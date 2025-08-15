@@ -20,7 +20,7 @@ export const ArticleRecomendationsList = memo(
       error,
     } = useArticleRecomendationsList(3);
 
-    if (error) {
+    if (isLoading || error || !articles) {
       return null;
     }
 
@@ -28,9 +28,10 @@ export const ArticleRecomendationsList = memo(
       <VStack gap="8" className={classNames("", {}, [className])}>
         <Text size={TextSize.L} title={t("Recommendations")} />
         <ArticleList
-          articles={articles || []}
+          articles={articles}
           isLoading={isLoading}
           target="_blank"
+          virtualized={false}
         />
       </VStack>
     );
