@@ -67,5 +67,8 @@
   "AppName": "БлогПост",
   "Create article": "Создать статью",
   "Error while loading articles": "Ошибка при загрузке статей",
-  "profile_error": "Профиль не найден"
+  "profile_error": "Профиль не найден",
+  "Admin panel": "Панель администратора",
+  "Admin": "Админка",
+  "Forbidden": "У вас нет доступа к этой странице"
 }

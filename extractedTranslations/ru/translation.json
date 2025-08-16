@@ -1,6 +1,8 @@
 {
   "404": "404",
   "About": "About",
+  "Admin": "Admin",
+  "Admin panel": "Admin panel",
   "All": "All",
   "AppName": "AppName",
   "Article not found": "Article not found",
@@ -18,6 +20,7 @@
   "Enter your comment": "Enter your comment",
   "Error while loading articles": "Error while loading articles",
   "Exit": "Exit",
+  "Forbidden": "Forbidden",
   "IT": "IT",
   "Login error": "Login error",
   "No articles": "No articles",

@@ -67,5 +67,8 @@
   "AppName": "BlogPost",
   "Create article": "Create article",
   "Error while loading articles": "Error while loading articles",
-  "profile_error": "Profile error"
+  "profile_error": "Profile error",
+  "Admin panel": "Admin panel",
+  "Admin": "Admin",
+  "Forbidden": "You don't have access to this page"
 }
