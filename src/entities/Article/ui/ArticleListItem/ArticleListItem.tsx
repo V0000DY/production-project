@@ -14,9 +14,9 @@ import {
   Article,
   ArticleBlockType,
   ArticleTextBlock,
-  ArticleView,
 } from "../../model/types/article";
 import { ArticleTextBlockComponent } from "../ArticleTextBlockComponent/ArticleTextBlockComponent";
+import { ArticleView } from "../../model/consts/articleConsts";
 
 interface ArticleListItemProps {
   className?: string;

@@ -4,10 +4,11 @@ import { Text, TextSize } from "shared/ui/Text/Text";
 import { t } from "i18next";
 import { List, ListRowProps, WindowScroller } from "react-virtualized";
 import { PAGE_ID } from "widgets/Page/Page";
-import { Article, ArticleView } from "../../model/types/article";
+import { Article } from "../../model/types/article";
 import cls from "./ArticleList.module.scss";
 import { ArticleListItem } from "../ArticleListItem/ArticleListItem";
 import { ArticleListItemSkeleton } from "../ArticleListItem/ArticleListItemSkeleton";
+import { ArticleView } from "../../model/consts/articleConsts";
 
 interface ArticleListProps {
   className?: string;

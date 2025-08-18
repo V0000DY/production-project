@@ -1,18 +1,7 @@
 import { User } from "entities/User";
+import { ArticleType } from "../consts/articleConsts";
 
 /* eslint-disable no-unused-vars */
-export enum ArticleSortField {
-  VIEWS = "views",
-  TITLE = "title",
-  CREATED = "createdAt",
-}
-
-export enum ArticleType {
-  ALL = "ALL",
-  IT = "IT",
-  SCIENCE = "SCIENCE",
-  ECONOMICS = "ECONOMICS",
-}
 
 export enum ArticleBlockType {
   TEXT = "TEXT",
@@ -46,11 +35,6 @@ export type ArticleBlock =
   | ArticleTextBlock
   | ArticleCodeBlock
   | ArticleImageBlock;
-
-export enum ArticleView {
-  BIG = "BIG",
-  SMALL = "SMALL",
-}
 
 export interface Article {
   id: string;

@@ -16,7 +16,7 @@ import {
   ArticleDetailsPageSchema,
   ArticleDetailsRecommendationsSchema,
 } from "pages/ArticleDetailsPage";
-import { AddCmmentFormSchema } from "features/addCommentForm";
+import { AddCommentFormSchema } from "features/addCommentForm";
 import { ArticlesPageSchema } from "pages/ArticlesPage";
 import { UISchema } from "features/UI";
 import { rtkApi } from "shared/api/rtkApi";
@@ -31,7 +31,7 @@ export interface StateSchema {
   loginForm?: LoginSchema;
   profile?: ProfileSchema;
   articleDetails?: ArticleDetailsSchema;
-  addCommentForm?: AddCmmentFormSchema;
+  addCommentForm?: AddCommentFormSchema;
   articlesPage?: ArticlesPageSchema;
   articleDetailsPage?: ArticleDetailsPageSchema;
 }
