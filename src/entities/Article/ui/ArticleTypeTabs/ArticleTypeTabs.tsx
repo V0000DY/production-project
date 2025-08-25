@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { memo, useCallback, useMemo } from "react";
-import { classNames } from "shared/lib/ClassNames/classNames";
 import { useTranslation } from "react-i18next";
-import { TabItem, Tabs } from "shared/ui/Tabs/Tabs";
+import { classNames } from "@/shared/lib/ClassNames/classNames";
+import { TabItem, Tabs } from "@/shared/ui/Tabs/Tabs";
 import { ArticleType } from "../../model/consts/articleConsts";
 
 interface ArticleTypeTabsProps {

@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Currency } from "entities/Currency";
-import { Country } from "entities/Country";
-import avatar from "shared/assets/tests/storybook.jpg";
+import { Currency } from "@/entities/Currency";
+import { Country } from "@/entities/Country";
+import avatar from "@/shared/assets/tests/storybook.jpg";
 import { ProfileCard } from "./ProfileCard";
 
 export default {

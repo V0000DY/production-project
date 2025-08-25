@@ -1,13 +1,13 @@
 /* eslint-disable indent */
-import "app/styles/index.scss";
+import "@/app/styles/index.scss";
 import { Story } from "@storybook/react";
-import { StateSchema, StoreProvider } from "app/providers/StoreProvider";
-import { loginReducer } from "features/AuthByUsername/model/slice/loginSlice";
-import { ReducersList } from "shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
-import { articleDetailsReducer } from "entities/Article/model/slice/articleDetailsSlice";
-import { addCommentFormReducer } from "features/addCommentForm/model/slices/addCommentFormSlice";
-import { articleDetailsPageReducers } from "pages/ArticleDetailsPage/model/slices";
-import { profileReducer } from "features/editableProfileCard";
+import { StateSchema, StoreProvider } from "@/app/providers/StoreProvider";
+import { loginReducer } from "@/features/AuthByUsername/model/slice/loginSlice";
+import { ReducersList } from "@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
+import { articleDetailsReducer } from "@/entities/Article/model/slice/articleDetailsSlice";
+import { addCommentFormReducer } from "@/features/addCommentForm/model/slices/addCommentFormSlice";
+import { articleDetailsPageReducers } from "@/pages/ArticleDetailsPage/model/slices";
+import { profileReducer } from "@/features/editableProfileCard";
 
 const defaultAsyncReducers: ReducersList = {
   loginForm: loginReducer,

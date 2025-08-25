@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { HTMLAttributes, memo, ReactNode } from "react";
-import { classNames } from "shared/lib/ClassNames/classNames";
+import { classNames } from "@/shared/lib/ClassNames/classNames";
 import cls from "./Card.module.scss";
 
 export enum CardTheme {

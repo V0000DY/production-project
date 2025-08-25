@@ -1,7 +1,7 @@
-import { TestAsyncThunk } from "shared/lib/tests/TestAsyncThunk/TestAsyncThunk";
-import * as UserSelectors from "entities/User";
-import * as ArticleSelectors from "entities/Article/model/selectors/articleDetails";
-import { Comment } from "entities/Comment";
+import { TestAsyncThunk } from "@/shared/lib/tests/TestAsyncThunk/TestAsyncThunk";
+import * as UserSelectors from "@/entities/User";
+import * as ArticleSelectors from "@/entities/Article/model/selectors/articleDetails";
+import { Comment } from "@/entities/Comment";
 import { addCommentForArticle } from "./addCommentForArticle";
 
 jest.mock("entities/User");

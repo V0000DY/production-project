@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { memo, ReactNode, useCallback } from "react";
-import { classNames } from "shared/lib/ClassNames/classNames";
+import { classNames } from "@/shared/lib/ClassNames/classNames";
 import cls from "./Tabs.module.scss";
 import { Card, CardTheme } from "../Card/Card";
 

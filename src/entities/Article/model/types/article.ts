@@ -1,4 +1,4 @@
-import { User } from "entities/User";
+import { User } from "@/entities/User";
 import { ArticleType } from "../consts/articleConsts";
 
 /* eslint-disable no-unused-vars */

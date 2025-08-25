@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { ChangeEvent, memo, useMemo } from "react";
-import { classNames, Mods } from "shared/lib/ClassNames/classNames";
+import { classNames, Mods } from "@/shared/lib/ClassNames/classNames";
 import cls from "./Select.module.scss";
 
 export interface SelectOption<T extends string> {
