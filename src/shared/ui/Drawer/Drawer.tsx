@@ -1,7 +1,11 @@
-import { memo, ReactNode, useCallback, useEffect } from "react";
+/* eslint-disable react/jsx-props-no-spreading */
+import { ReactNode, useCallback, useEffect } from "react";
 import { useTheme } from "@/app/providers/ThemeProvider";
 import { classNames } from "@/shared/lib/ClassNames/classNames";
-import { useAnimationLibs } from "@/shared/lib/components/AnimationProvider";
+import {
+  AnimationProvider,
+  useAnimationLibs,
+} from "@/shared/lib/components/AnimationProvider";
 import cls from "./Drawer.module.scss";
 import { Portal } from "../Portal/Portal";
 import { Overlay } from "../Overlay/Overlay";
@@ -84,7 +88,6 @@ export const DrawerContent = (props: DrawerProps) => {
         <Spring.a.div
           className={cls.sheet}
           style={{ display, bottom: `calc(-100vh + ${y}px)`, y }}
-          // eslint-disable-next-line react/jsx-props-no-spreading
           {...bind()}
         >
           {children}
@@ -94,13 +97,18 @@ export const DrawerContent = (props: DrawerProps) => {
   );
 };
 
-export const Drawer = memo((props: DrawerProps) => {
+const DrawerAsync = (props: DrawerProps) => {
   const { isLoaded } = useAnimationLibs();
 
   if (!isLoaded) {
     return null;
   }
 
-  // eslint-disable-next-line react/jsx-props-no-spreading
   return <DrawerContent {...props} />;
-});
+};
+
+export const Drawer = (props: DrawerProps) => (
+  <AnimationProvider>
+    <DrawerAsync {...props} />
+  </AnimationProvider>
+);
