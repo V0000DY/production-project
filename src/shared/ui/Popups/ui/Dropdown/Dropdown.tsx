@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import { Fragment, ReactNode } from "react";
 import { Menu } from "@headlessui/react";
 import { DropdownDirection } from "@/shared/types/ui";
@@ -46,14 +47,22 @@ export function Dropdown(props: DropdownProps) {
 
           if (item.href) {
             return (
-              <Menu.Item as={AppLink} to={item.href} disabled={item.disabled}>
+              <Menu.Item
+                as={AppLink}
+                key={`dopdown-key-${idx}`}
+                to={item.href}
+                disabled={item.disabled}
+              >
                 {content}
               </Menu.Item>
             );
           }
           return (
-            // eslint-disable-next-line react/no-array-index-key
-            <Menu.Item as={Fragment} key={idx} disabled={item.disabled}>
+            <Menu.Item
+              as={Fragment}
+              key={`dopdown-key-${idx}`}
+              disabled={item.disabled}
+            >
               {content}
             </Menu.Item>
           );
