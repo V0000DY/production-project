@@ -73,5 +73,8 @@
   "Forbidden": "You don't have access to this page",
   "Your feedback": "Your feedback",
   "Article_rating": "How do you like the article?",
-  "Article_feedback": "Leave a review about the article"
+  "Article_feedback": "Leave a review about the article",
+  "ArticleRating_title": "Rate the article",
+  "ArticleRating_feedback": "Leave your feedback on the article, it will help improve the quality",
+  "Thanks for rating": "Thanks for rating"
 }
