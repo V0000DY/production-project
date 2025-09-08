@@ -750,16 +750,28 @@
     {
       "id": "1",
       "rate": 4,
-      "feedback": "Хорошая статья",
+      "feedback": "Хороший профиль",
       "userId": "1",
       "profileId": "1"
     },
     {
-      "id": "2",
-      "rate": 4,
-      "feedback": "Хорошая статья",
       "userId": "1",
-      "profileId": "2"
+      "profileId": "2",
+      "rate": 2,
+      "id": "XwrIoxW"
+    },
+    {
+      "userId": "1",
+      "profileId": "3",
+      "rate": 5,
+      "feedback": "Отличный профиль!",
+      "id": "Xu4Uity"
+    },
+    {
+      "userId": "1",
+      "profileId": "4",
+      "rate": 1,
+      "id": "UHvNsT4"
     }
   ]
 }
