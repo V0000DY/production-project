@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { AvatarDropdown } from "./AvatarDropdown";
