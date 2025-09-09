@@ -49,7 +49,7 @@ module.exports = {
     "react-hooks/exhaustive-deps": "error",
     "no-param-reassign": "off",
     "no-undef": "off",
-    "vitaly-plugin/path-checker": "error",
+    "vitaly-plugin/path-checker": ["error", { alias: "@" }],
     "i18next/no-literal-string": [
       "error",
       {

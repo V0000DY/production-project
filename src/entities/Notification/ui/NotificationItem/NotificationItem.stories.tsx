@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-
+import { Notification } from "../../model/types/notification";
 import { NotificationItem } from "./NotificationItem";
 
 export default {
@@ -15,5 +15,12 @@ const Template: ComponentStory<typeof NotificationItem> = (args) => (
   <NotificationItem {...args} />
 );
 
+const notification: Notification = {
+  id: "1",
+  title: "Уведомление 1",
+  description: "Описание уведомления 1",
+  href: "https://google.com",
+};
+
 export const Normal = Template.bind({});
-Normal.args = {};
+Normal.args = { item: notification };
