@@ -1,6 +1,6 @@
 import { TestAsyncThunk } from "@/shared/lib/tests/TestAsyncThunk/TestAsyncThunk";
 import * as UserSelectors from "@/entities/User";
-import * as ArticleSelectors from "@/entities/Article/model/selectors/articleDetails";
+import { getArticleDetailsData } from "@/entities/Article";
 import { Comment } from "@/entities/Comment";
 import { addCommentForArticle } from "./addCommentForArticle";
 
@@ -19,9 +19,7 @@ describe("addCommentForArticle (TestAsyncThunk)", () => {
   test("success: add comment", async () => {
     // Мокаем селекторы
     (UserSelectors.getUserAuthData as jest.Mock).mockReturnValue(userData);
-    (ArticleSelectors.getArticleDetailsData as jest.Mock).mockReturnValue(
-      article
-    );
+    (getArticleDetailsData as jest.Mock).mockReturnValue(article);
 
     const thunk = new TestAsyncThunk(addCommentForArticle);
     thunk.api.post.mockResolvedValue({ data: comment });
@@ -42,9 +40,7 @@ describe("addCommentForArticle (TestAsyncThunk)", () => {
 
   test("reject: if no userData", async () => {
     (UserSelectors.getUserAuthData as jest.Mock).mockReturnValue(undefined);
-    (ArticleSelectors.getArticleDetailsData as jest.Mock).mockReturnValue(
-      article
-    );
+    (getArticleDetailsData as jest.Mock).mockReturnValue(article);
 
     const thunk = new TestAsyncThunk(addCommentForArticle);
     const result = await thunk.callThunk("Test comment");
@@ -56,9 +52,7 @@ describe("addCommentForArticle (TestAsyncThunk)", () => {
 
   test("reject: if no article", async () => {
     (UserSelectors.getUserAuthData as jest.Mock).mockReturnValue(userData);
-    (ArticleSelectors.getArticleDetailsData as jest.Mock).mockReturnValue(
-      undefined
-    );
+    (getArticleDetailsData as jest.Mock).mockReturnValue(undefined);
 
     const thunk = new TestAsyncThunk(addCommentForArticle);
     const result = await thunk.callThunk("Test comment");
@@ -70,9 +64,7 @@ describe("addCommentForArticle (TestAsyncThunk)", () => {
 
   test("reject: if empty comment", async () => {
     (UserSelectors.getUserAuthData as jest.Mock).mockReturnValue(userData);
-    (ArticleSelectors.getArticleDetailsData as jest.Mock).mockReturnValue(
-      article
-    );
+    (getArticleDetailsData as jest.Mock).mockReturnValue(article);
 
     const thunk = new TestAsyncThunk(addCommentForArticle);
     const result = await thunk.callThunk("");
@@ -84,9 +76,7 @@ describe("addCommentForArticle (TestAsyncThunk)", () => {
 
   test("reject: if API return error", async () => {
     (UserSelectors.getUserAuthData as jest.Mock).mockReturnValue(userData);
-    (ArticleSelectors.getArticleDetailsData as jest.Mock).mockReturnValue(
-      article
-    );
+    (getArticleDetailsData as jest.Mock).mockReturnValue(article);
 
     const thunk = new TestAsyncThunk(addCommentForArticle);
     thunk.api.post.mockRejectedValue(new Error("Network error"));
@@ -99,9 +89,7 @@ describe("addCommentForArticle (TestAsyncThunk)", () => {
 
   test("reject: if API return data = undefined", async () => {
     (UserSelectors.getUserAuthData as jest.Mock).mockReturnValue(userData);
-    (ArticleSelectors.getArticleDetailsData as jest.Mock).mockReturnValue(
-      article
-    );
+    (getArticleDetailsData as jest.Mock).mockReturnValue(article);
 
     const thunk = new TestAsyncThunk(addCommentForArticle);
     thunk.api.post.mockResolvedValue({});

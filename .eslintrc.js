@@ -50,6 +50,7 @@ module.exports = {
     "no-param-reassign": "off",
     "no-undef": "off",
     "vitaly-plugin/path-checker": ["error", { alias: "@" }],
+    "vitaly-plugin/public-api-imports": ["error", { alias: "@" }],
     "i18next/no-literal-string": [
       "error",
       {

@@ -1,3 +1,4 @@
+/* eslint-disable vitaly-plugin/public-api-imports */
 /* eslint-disable indent */
 import "@/app/styles/index.scss";
 import { Story } from "@storybook/react";

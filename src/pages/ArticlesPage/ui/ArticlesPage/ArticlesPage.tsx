@@ -6,7 +6,7 @@ import {
   DynamicModuleLoader,
   ReducersList,
 } from "@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
-import { Page } from "@/widgets/Page/Page";
+import { Page } from "@/widgets/Page";
 import { useInitialEffect } from "@/shared/lib/hooks/useInitialEffect/useInitialEffect";
 import { articlesPageReducer } from "../../model/slices/articlesPageSlice";
 import cls from "./ArticlesPage.module.scss";
