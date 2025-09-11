@@ -50,7 +50,17 @@ module.exports = {
     "no-param-reassign": "off",
     "no-undef": "off",
     "vitaly-plugin/path-checker": ["error", { alias: "@" }],
-    "vitaly-plugin/public-api-imports": ["error", { alias: "@" }],
+    "vitaly-plugin/public-api-imports": [
+      "error",
+      {
+        alias: "@",
+        testFilesPatterns: [
+          "**/*.test.*",
+          "**/*.stories.*",
+          "**/StoreDecorator.tsx",
+        ],
+      },
+    ],
     "i18next/no-literal-string": [
       "error",
       {

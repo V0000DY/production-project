@@ -1,13 +1,12 @@
-/* eslint-disable vitaly-plugin/public-api-imports */
 /* eslint-disable indent */
 import "@/app/styles/index.scss";
 import { Story } from "@storybook/react";
 import { StateSchema, StoreProvider } from "@/app/providers/StoreProvider";
-import { loginReducer } from "@/features/AuthByUsername/model/slice/loginSlice";
+import { loginReducer } from "@/features/AuthByUsername/testing";
 import { ReducersList } from "@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
-import { articleDetailsReducer } from "@/entities/Article/model/slice/articleDetailsSlice";
-import { addCommentFormReducer } from "@/features/addCommentForm/model/slices/addCommentFormSlice";
-import { articleDetailsPageReducers } from "@/pages/ArticleDetailsPage/model/slices";
+import { articleDetailsReducer } from "@/entities/Article/testing";
+import { addCommentFormReducer } from "@/features/addCommentForm/testing";
+import { articleDetailsPageReducers } from "@/pages/ArticleDetailsPage/testing";
 import { profileReducer } from "@/features/editableProfileCard";
 
 const defaultAsyncReducers: ReducersList = {
