@@ -1,9 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { memo, Suspense, useCallback } from "react";
-import {
-  AppRouteProps,
-  routeConfig,
-} from "@/shared/config/routeConfig/routeConfig";
+import { AppRouteProps } from "@/shared/types/router";
+import { routeConfig } from "../config/routeConfig";
 import { PageLoader } from "@/widgets/PageLoader";
 import RequireAuth from "./RequireAuth";
 
