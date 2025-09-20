@@ -50,6 +50,13 @@ module.exports = {
     "no-param-reassign": "off",
     "no-undef": "off",
     "vitaly-plugin/path-checker": ["error", { alias: "@" }],
+    "vitaly-plugin/layer-imports": [
+      "error",
+      {
+        alias: "@",
+        ignoreImportPatterns: ["**/StoreProvider", "**/testing"],
+      },
+    ],
     "vitaly-plugin/public-api-imports": [
       "error",
       {
@@ -98,6 +105,7 @@ module.exports = {
       rules: {
         "i18next/no-literal-string": "off",
         "max-len": "off",
+        "react/jsx-props-no-spreading": "off",
       },
     },
   ],

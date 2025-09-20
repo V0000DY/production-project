@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-import "@/app/styles/index.scss";
+// import "@/app/styles/index.scss";
 import { Story } from "@storybook/react";
 import { StateSchema, StoreProvider } from "@/app/providers/StoreProvider";
 import { loginReducer } from "@/features/AuthByUsername/testing";
@@ -7,7 +7,7 @@ import { ReducersList } from "@/shared/lib/components/DynamicModuleLoader/Dynami
 import { articleDetailsReducer } from "@/entities/Article/testing";
 import { addCommentFormReducer } from "@/features/addCommentForm/testing";
 import { articleDetailsPageReducers } from "@/pages/ArticleDetailsPage/testing";
-import { profileReducer } from "@/features/editableProfileCard";
+import { profileReducer } from "@/features/editableProfileCard/testing";
 
 const defaultAsyncReducers: ReducersList = {
   loginForm: loginReducer,
