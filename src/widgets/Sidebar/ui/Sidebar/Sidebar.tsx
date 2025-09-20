@@ -2,8 +2,8 @@
 import { useSelector } from "react-redux";
 import { memo, useMemo, useState } from "react";
 import { classNames } from "@/shared/lib/ClassNames/classNames";
-import { Button, ButtonSize, ButtonTheme } from "@/shared/ui/Button/Button";
-import { VStack } from "@/shared/ui/Stack/VStack/VStack";
+import { Button, ButtonSize, ButtonTheme } from "@/shared/ui/Button";
+import { VStack } from "@/shared/ui/Stack";
 import cls from "./Sidebar.module.scss";
 import { SidebarItem } from "../SidebarItem/SidebarItem";
 import { getSidebarItems } from "../../model/selectors/getSidebarItems";
