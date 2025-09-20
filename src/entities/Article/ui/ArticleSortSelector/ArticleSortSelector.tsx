@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { memo, useCallback, useMemo } from "react";
+import { memo, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { classNames } from "@/shared/lib/ClassNames/classNames";
 import { Select, SelectOption } from "@/shared/ui/Select";

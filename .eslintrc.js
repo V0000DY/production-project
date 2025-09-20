@@ -19,6 +19,7 @@ module.exports = {
     "i18next",
     "react-hooks",
     "vitaly-plugin",
+    "unused-imports",
   ],
   rules: {
     quotes: ["warn", "double"],
@@ -28,6 +29,7 @@ module.exports = {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
     ],
+    "unused-imports/no-unused-imports": "error",
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
     "no-unused-vars": "warn",
