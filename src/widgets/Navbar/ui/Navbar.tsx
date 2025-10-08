@@ -8,7 +8,7 @@ import { Button, ButtonTheme } from "@/shared/ui/Button";
 import { getUserAuthData } from "@/entities/User";
 import { Text, TextTheme } from "@/shared/ui/Text";
 import { AppLink, AppLinkTheme } from "@/shared/ui/AppLink";
-import { RoutePath } from "@/shared/const/router";
+import { getRouteArticleCreate } from "@/shared/const/router";
 import { AvatarDropdown } from "@/features/avatarDropdown";
 import { HStack } from "@/shared/ui/Stack";
 import { NotificationButton } from "@/features/notificationButton";
@@ -40,7 +40,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
           theme={TextTheme.INVERTED}
         />
         <AppLink
-          to={RoutePath.article_create}
+          to={getRouteArticleCreate()}
           theme={AppLinkTheme.SECONDARY}
           className={cls.createLink}
         >
