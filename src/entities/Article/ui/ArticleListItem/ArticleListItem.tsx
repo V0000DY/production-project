@@ -17,6 +17,8 @@ import {
 } from "../../model/types/article";
 import { ArticleTextBlockComponent } from "../ArticleTextBlockComponent/ArticleTextBlockComponent";
 import { ArticleView } from "../../model/consts/articleConsts";
+import { AppImage } from "@/shared/ui/AppImage";
+import { Skeleton } from "@/shared/ui/Skeleton";
 
 interface ArticleListItemProps {
   className?: string;
@@ -36,9 +38,6 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
       <Icon Svg={EyeIcon} />
     </>
   );
-  const image = (
-    <img className={cls.img} src={article.img} alt={article.title} />
-  );
 
   if (view === ArticleView.BIG) {
     const textBlock = article.blocks.find(
@@ -56,7 +55,12 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
           </div>
           <Text title={article.title} className={cls.title} />
           {types}
-          {image}
+          <AppImage
+            fallback={<Skeleton width="100%" height={16} />}
+            className={cls.img}
+            src={article.img}
+            alt={article.title}
+          />
           {textBlock && (
             <ArticleTextBlockComponent
               block={textBlock}
@@ -82,7 +86,12 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
     >
       <Card>
         <div className={cls.imageWrapper}>
-          {image}
+          <AppImage
+            fallback={<Skeleton width={12.5} height={12.5} />}
+            className={cls.img}
+            src={article.img}
+            alt={article.title}
+          />
           <Text text={article.createdAt} className={cls.date} />
         </div>
         <div className={cls.infoWrapper}>

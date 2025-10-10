@@ -631,7 +631,7 @@
       "username": "manager",
       "password": "123",
       "roles": ["MANAGER"],
-      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+      "avatar": "https://1111.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
   "profile": [
@@ -656,6 +656,17 @@
       "city": "Северск",
       "username": "user",
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+    },
+    {
+      "id": "3",
+      "first": "Менеджер",
+      "lastname": "Иванович",
+      "age": 38,
+      "currency": "USD",
+      "country": "Russia",
+      "city": "Северск",
+      "username": "user",
+      "avatar": "https://1111.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
   "article-ratings": [

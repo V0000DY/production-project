@@ -48,7 +48,7 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
           href: getRouteProfile(authData.id),
         },
       ]}
-      trigger={<Avatar size={2} src={authData.avatar} />}
+      trigger={<Avatar fallbackInverted size={2} src={authData.avatar} />}
       direction="bottom left"
     />
   );
