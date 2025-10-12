@@ -1,12 +1,100 @@
-name: Linting, testing and building
-run-name: ${{ github.actor }} is testing out project 🚀
+# name: Linting, testing and building
+# run-name: ${{ github.actor }} is testing out project 🚀
+# on:
+#   push:
+#     branches: ["main"]
+#   pull_request:
+#     branches: ["main"]
+# jobs:
+#   pipeline:
+#     runs-on: ubuntu-latest
+#     strategy:
+#       matrix:
+#         node-version: [17.x]
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Staring Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: ${{ matrix.node-version }}
+#       - name: Install dependencies
+#         run: npm ci --force
+#       - name: Build production project
+#         run: npm run build:prod
+#         if: always()
+#       - name: Linting typescript
+#         run: npm run lint:ts
+#         if: always()
+#       - name: Linting scss
+#         run: npm run lint:scss
+#         if: always()
+#       - name: Unit tests
+#         run: npm run test:unit
+#         if: always()
+#       - name: build storybook
+#         run: npm run storybook:build
+#         if: always()
+#       - name: screenshots tests
+#         run: npm run test:ui:ci
+#         if: always()
+
+name: linting, testing, building
 on:
   push:
     branches: ["main"]
   pull_request:
     branches: ["main"]
+  permissions:
+    contents: write
+    pages: write
+    id-token: write
+  concurrency:
+    group: "pages"
+    cancel-in-progress: true
 jobs:
-  pipeline:
+  build-and-ui-testing:
+    runs-on: ubuntu-latest
+    concurrency: ci-${{ github.ref }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    strategy:
+      matrix:
+        node-version: [17.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Staring Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: npm ci --force
+      - name: build production project
+        run: npm run build:prod
+        if: always()
+      - name: build storybook
+        run: npm run storybook:build
+        if: always()
+      - name: screenshot testing
+        run: npm run test:ui:ci
+        if: always()
+      - name: Generate html report
+        run: npm run test:ui:report
+        if: always()
+      - name: Setup pages
+        uses: actions/configure-pages@v3
+        if: always()
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        if: always()
+        with:
+          path: ".loki"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        if: always()
+        uses: actions/deploy-pages@v2
+
+  checks:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -19,21 +107,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: npm ci --force
-      - name: Build production project
-        run: npm run build:prod
-        if: always()
       - name: Linting typescript
         run: npm run lint:ts
         if: always()
       - name: Linting scss
         run: npm run lint:scss
-        if: always()
-      - name: Unit tests
+      - name: unit testing
         run: npm run test:unit
-        if: always()
-      - name: build storybook
-        run: npm run storybook:build
-        if: always()
-      - name: screenshots tests
-        run: npm run test:ui:ci
         if: always()
