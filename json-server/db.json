@@ -632,6 +632,13 @@
       "password": "123",
       "roles": ["MANAGER"],
       "avatar": "https://1111.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": ["ADMIN"],
+      "avatar": "https://1111.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
   "profile": [
