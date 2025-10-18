@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 import { classNames, Mods } from "@/shared/lib/ClassNames/classNames";
 import cls from "./Flex.module.scss";
@@ -56,6 +57,7 @@ export const Flex = (props: FlexProps) => {
     direction = "row",
     gap,
     max,
+    ...otherProps
   } = props;
 
   const classes = [
@@ -69,5 +71,9 @@ export const Flex = (props: FlexProps) => {
     [cls.max]: max,
   };
 
-  return <div className={classNames(cls.Flex, mods, classes)}>{children}</div>;
+  return (
+    <div className={classNames(cls.Flex, mods, classes)} {...otherProps}>
+      {children}
+    </div>
+  );
 };
