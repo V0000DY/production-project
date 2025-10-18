@@ -589,6 +589,19 @@
       ],
       "blocks": [],
       "id": "tf-7PiA"
+    },
+    {
+      "title": "TESTING ARTICLE",
+      "subtitle": "Биология",
+      "img": "https://static.vecteezy.com/system/resources/thumbnails/027/013/992/small_2x/biology-doodle-set-collection-of-hand-drawn-elements-science-biology-circle-shape-illustration-isolated-on-a-white-background-vector.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "FEZ63Wi"
     }
   ],
   "comments": [
@@ -699,6 +712,12 @@
       "userId": "1",
       "text": "123",
       "id": "nKp3qyG"
+    },
+    {
+      "articleId": "FEZ63Wi",
+      "userId": "4",
+      "text": "Test text from cypress",
+      "id": "1U9fEdn"
     }
   ],
   "users": [
