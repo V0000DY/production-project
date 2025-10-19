@@ -43,21 +43,21 @@ const ProfileRating = memo((props: ProfileRatingProps) => {
         console.log(e);
       }
     },
-    [profileId, rateProfileMutation, userData?.id]
+    [profileId, rateProfileMutation, userData?.id],
   );
 
   const onAccept = useCallback(
     (starsCount: number, feedback?: string) => {
       handleRateProfile(starsCount, feedback);
     },
-    [handleRateProfile]
+    [handleRateProfile],
   );
 
   const onCancel = useCallback(
     (starsCount: number) => {
       handleRateProfile(starsCount);
     },
-    [handleRateProfile]
+    [handleRateProfile],
   );
 
   if (isLoading) {

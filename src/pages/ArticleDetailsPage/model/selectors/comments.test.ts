@@ -26,7 +26,7 @@ describe("getArticleComments.test", () => {
   test("getArticleCommentsIsLoading: should work with empty state", () => {
     const state: DeepPartial<StateSchema> = {};
     expect(getArticleCommentsIsLoading(state as StateSchema)).toEqual(
-      undefined
+      undefined,
     );
   });
 

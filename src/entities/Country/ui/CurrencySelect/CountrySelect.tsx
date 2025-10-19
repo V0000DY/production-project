@@ -29,7 +29,7 @@ export const CountrySelect = memo(
       (value: string) => {
         onChange?.(value as Country);
       },
-      [onChange]
+      [onChange],
     );
 
     return (
@@ -44,5 +44,5 @@ export const CountrySelect = memo(
         label={t("profile_Country")}
       />
     );
-  }
+  },
 );

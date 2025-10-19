@@ -43,21 +43,21 @@ const ArticleRating = memo((props: ArticleRatingProps) => {
         console.log(e);
       }
     },
-    [articleId, rateArticleMutation, userData?.id]
+    [articleId, rateArticleMutation, userData?.id],
   );
 
   const onAccept = useCallback(
     (starsCount: number, feedback?: string) => {
       handleRateArticle(starsCount, feedback);
     },
-    [handleRateArticle]
+    [handleRateArticle],
   );
 
   const onCancel = useCallback(
     (starsCount: number) => {
       handleRateArticle(starsCount);
     },
-    [handleRateArticle]
+    [handleRateArticle],
   );
 
   if (isLoading) {

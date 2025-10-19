@@ -47,7 +47,7 @@ describe("articlePageSelectors.test", () => {
   test("getArticlesPageView: should work with empty state and return SMALL", () => {
     const state: DeepPartial<StateSchema> = {};
     expect(getArticlesPageView(state as StateSchema)).toEqual(
-      ArticleView.SMALL
+      ArticleView.SMALL,
     );
   });
 });

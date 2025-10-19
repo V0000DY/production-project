@@ -46,7 +46,7 @@ export const EditableProfileCard = memo((props: EditableProfileCardProps) => {
   const validateErrorTranslates = {
     [ValidateProfileError.SERVER_ERROR]: t("profile_server_error"),
     [ValidateProfileError.INCORRECT_USER_DATA]: t(
-      "profile_incorrect_user_data"
+      "profile_incorrect_user_data",
     ),
     [ValidateProfileError.INCORRECT_AGE]: t("profile_incorrect_age"),
     [ValidateProfileError.INCORRECT_COUNTRY]: t("profile_incorrect_country"),
@@ -57,56 +57,56 @@ export const EditableProfileCard = memo((props: EditableProfileCardProps) => {
     (value?: string) => {
       dispatch(profileActions.updateProfile({ first: value || "" }));
     },
-    [dispatch]
+    [dispatch],
   );
 
   const onChangeLastName = useCallback(
     (value?: string) => {
       dispatch(profileActions.updateProfile({ lastname: value || "" }));
     },
-    [dispatch]
+    [dispatch],
   );
 
   const onChangeAge = useCallback(
     (value?: string) => {
       dispatch(profileActions.updateProfile({ age: Number(value) || 0 }));
     },
-    [dispatch]
+    [dispatch],
   );
 
   const onChangeCity = useCallback(
     (value?: string) => {
       dispatch(profileActions.updateProfile({ city: value || "" }));
     },
-    [dispatch]
+    [dispatch],
   );
 
   const onChangeUsername = useCallback(
     (value?: string) => {
       dispatch(profileActions.updateProfile({ username: value || "" }));
     },
-    [dispatch]
+    [dispatch],
   );
 
   const onChangeAvatar = useCallback(
     (value?: string) => {
       dispatch(profileActions.updateProfile({ avatar: value || "" }));
     },
-    [dispatch]
+    [dispatch],
   );
 
   const onChangeCurrency = useCallback(
     (currency?: Currency) => {
       dispatch(profileActions.updateProfile({ currency }));
     },
-    [dispatch]
+    [dispatch],
   );
 
   const onChangeCountry = useCallback(
     (country?: Country) => {
       dispatch(profileActions.updateProfile({ country }));
     },
-    [dispatch]
+    [dispatch],
   );
 
   useInitialEffect(() => {

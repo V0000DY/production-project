@@ -32,7 +32,7 @@ describe("addCommentForArticle (TestAsyncThunk)", () => {
       text: "Test comment",
     });
     expect(
-      thunk.dispatch.mock.calls.some(([arg]) => typeof arg === "function")
+      thunk.dispatch.mock.calls.some(([arg]) => typeof arg === "function"),
     ).toBe(true);
     expect(result.meta.requestStatus).toBe("fulfilled");
     expect(result.payload).toEqual(comment);

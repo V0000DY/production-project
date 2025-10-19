@@ -47,7 +47,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
         onAccept?.(selectedStarsCount);
       }
     },
-    [hasFeedback, onAccept]
+    [hasFeedback, onAccept],
   );
 
   const acceptHandler = useCallback(() => {

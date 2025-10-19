@@ -43,7 +43,7 @@ describe("loginByUsername.test", () => {
     const result = await thunk.callThunk({ username: "123", password: "123" });
 
     expect(thunk.dispatch).toHaveBeenCalledWith(
-      userActions.setAuthData(userData)
+      userActions.setAuthData(userData),
     );
     expect(thunk.dispatch).toHaveBeenCalledTimes(3);
     expect(thunk.api.post).toHaveBeenCalled();

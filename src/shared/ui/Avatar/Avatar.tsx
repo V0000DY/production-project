@@ -28,7 +28,7 @@ export const Avatar = ({
       width: `${size}rem`,
       height: `${size}rem`,
     }),
-    [size]
+    [size],
   );
 
   const fallback = <Skeleton border="50%" width={size} height={size} />;

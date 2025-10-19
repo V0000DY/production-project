@@ -34,14 +34,14 @@ export const ArticleTypeTabs = memo((props: ArticleTypeTabsProps) => {
         content: t("Economics"),
       },
     ],
-    [t]
+    [t],
   );
 
   const onTabClick = useCallback(
     (tab: TabItem) => {
       onChangeType(tab.value as ArticleType);
     },
-    [onChangeType]
+    [onChangeType],
   );
 
   return (

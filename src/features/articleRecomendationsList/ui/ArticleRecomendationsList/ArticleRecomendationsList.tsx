@@ -38,5 +38,5 @@ export const ArticleRecomendationsList = memo(
         />
       </VStack>
     );
-  }
+  },
 );

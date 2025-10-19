@@ -45,7 +45,7 @@ export const AnimationProvider = ({ children }: { children: ReactNode }) => {
       Spring: SpringRef.current,
       isLoaded,
     }),
-    [isLoaded]
+    [isLoaded],
   );
 
   return (

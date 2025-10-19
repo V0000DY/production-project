@@ -43,5 +43,5 @@ export const ArticleDetailsPageHeader = memo(
         )}
       </HStack>
     );
-  }
+  },
 );

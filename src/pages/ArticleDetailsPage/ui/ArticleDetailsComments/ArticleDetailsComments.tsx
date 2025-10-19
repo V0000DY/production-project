@@ -31,7 +31,7 @@ export const ArticleDetailsComments = memo(
       (text: string) => {
         dispatch(addCommentForArticle(text));
       },
-      [dispatch]
+      [dispatch],
     );
 
     useInitialEffect(() => {
@@ -47,5 +47,5 @@ export const ArticleDetailsComments = memo(
         <CommentList isLoading={commentsIsLoading} comments={comments} />
       </VStack>
     );
-  }
+  },
 );

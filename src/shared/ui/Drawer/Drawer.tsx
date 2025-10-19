@@ -70,7 +70,7 @@ export const DrawerContent = (props: DrawerProps) => {
       filterTaps: true,
       bounds: { top: 0 },
       rubberband: true,
-    }
+    },
   );
 
   if (!isOpen) {

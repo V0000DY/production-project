@@ -24,7 +24,7 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
       { value: "asc", content: t("ascending") },
       { value: "desc", content: t("descending") },
     ],
-    [t]
+    [t],
   );
 
   const sortFieldOptions = useMemo<SelectOption<ArticleSortField>[]>(
@@ -33,7 +33,7 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
       { value: ArticleSortField.TITLE, content: t("title") },
       { value: ArticleSortField.VIEWS, content: t("views") },
     ],
-    [t]
+    [t],
   );
 
   return (

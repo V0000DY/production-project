@@ -4,7 +4,7 @@ import { USER_LOCALSTORAGE_KEY } from "../../../src/shared/const/localStorage";
 
 export const login = (
   username: string = "testuser",
-  password: string = "123"
+  password: string = "123",
 ) => {
   cy.request({
     method: "POST",

@@ -12,7 +12,7 @@ export const getArticleRecommendations =
   recomendationsAdapter.getSelectors<StateSchema>(
     (state) =>
       state.articleDetailsPage?.recommendations ||
-      recomendationsAdapter.getInitialState()
+      recomendationsAdapter.getInitialState(),
   );
 
 const articleDetailsRecommendationsSlice = createSlice({

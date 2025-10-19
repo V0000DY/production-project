@@ -39,7 +39,7 @@ export function useModal({ onClose, isOpen, animationDelay }: ModalProps) {
         close();
       }
     },
-    [close]
+    [close],
   );
 
   useEffect(() => {

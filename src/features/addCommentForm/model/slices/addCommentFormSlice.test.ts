@@ -11,7 +11,7 @@ describe("addCommentFormSlice.test", () => {
       error: "",
     };
     expect(addCommentFormReducer(undefined, { type: "" })).toEqual(
-      initialState
+      initialState,
     );
   });
 
@@ -20,7 +20,7 @@ describe("addCommentFormSlice.test", () => {
     const newText = "Comment text";
     const state = addCommentFormReducer(
       prevState,
-      addCommentFormActions.setText(newText)
+      addCommentFormActions.setText(newText),
     );
     expect(state.text).toBe(newText);
   });
@@ -30,7 +30,7 @@ describe("addCommentFormSlice.test", () => {
     const newText = "Comment text";
     const state = addCommentFormReducer(
       prevState,
-      addCommentFormActions.setText(newText)
+      addCommentFormActions.setText(newText),
     );
     expect(state.error).toBe("Error");
   });

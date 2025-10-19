@@ -31,7 +31,7 @@ describe("articleDetailsCommentsSlice.test", () => {
 
   test("should return initial state", () => {
     expect(articleDetailsCommentsReducer(undefined, { type: "" })).toEqual(
-      initialState
+      initialState,
     );
   });
 
@@ -39,7 +39,7 @@ describe("articleDetailsCommentsSlice.test", () => {
     const state = { ...initialState, error: "error" };
     const next = articleDetailsCommentsReducer(
       state,
-      fetchCommentsByArticleId.pending("", "articleId")
+      fetchCommentsByArticleId.pending("", "articleId"),
     );
     expect(next.isLoading).toBe(true);
     expect(next.error).toBeUndefined();
@@ -50,7 +50,7 @@ describe("articleDetailsCommentsSlice.test", () => {
     const comments = [comment1, comment2];
     const next = articleDetailsCommentsReducer(
       state,
-      fetchCommentsByArticleId.fulfilled(comments, "", "articleId")
+      fetchCommentsByArticleId.fulfilled(comments, "", "articleId"),
     );
     expect(next.isLoading).toBe(false);
     expect(next.ids).toEqual(["1", "2"]);
@@ -63,7 +63,7 @@ describe("articleDetailsCommentsSlice.test", () => {
     const error = "Network error";
     const next = articleDetailsCommentsReducer(
       state,
-      fetchCommentsByArticleId.rejected(new Error(), "", "articleId", error)
+      fetchCommentsByArticleId.rejected(new Error(), "", "articleId", error),
     );
     expect(next.isLoading).toBe(false);
     expect(next.error).toBe(error);
