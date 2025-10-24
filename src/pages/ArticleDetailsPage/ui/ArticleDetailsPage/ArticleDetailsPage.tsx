@@ -1,5 +1,6 @@
 import { memo } from "react";
 import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { classNames } from "@/shared/lib/ClassNames/classNames";
 import { ArticleDetails } from "@/entities/Article";
 import {
@@ -14,8 +15,8 @@ import { articleDetailsPageReducers } from "../../model/slices";
 import { ArticleDetailsPageHeader } from "../ArticleDetailsPageHeader/ArticleDetailsPageHeader";
 import { ArticleDetailsComments } from "../ArticleDetailsComments/ArticleDetailsComments";
 import { ArticleRating } from "@/features/articleRating";
-import { getFeatureFlags } from "@/shared/lib/features";
-import { Counter } from "@/entities/Counter";
+import { toggleFeatures } from "@/shared/lib/features";
+import { Card } from "@/shared/ui/Card";
 
 interface ArticleDetailsPageProps {
   className?: string;
@@ -27,13 +28,18 @@ const reducers: ReducersList = {
 
 const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
   const { className } = props;
+  const { t } = useTranslation();
   const { id } = useParams<{ id: string }>();
-  const isArticleRatingEnabled = getFeatureFlags("isArticleRatingEnabled");
-  const isCounterEnabled = getFeatureFlags("isCounterEnabled");
 
   if (!id) {
     return null;
   }
+
+  const articleRatingCard = toggleFeatures<JSX.Element>({
+    name: "isArticleRatingEnabled",
+    on: () => <ArticleRating articleId={id} />,
+    off: () => <Card>{t("Article rating will come soon")}</Card>,
+  });
 
   return (
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
@@ -41,8 +47,7 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
         <VStack gap="16" max>
           <ArticleDetailsPageHeader />
           <ArticleDetails id={id} />
-          {isCounterEnabled && <Counter />}
-          {isArticleRatingEnabled && <ArticleRating articleId={id} />}
+          {articleRatingCard}
           <ArticleRecomendationsList />
           <ArticleDetailsComments id={id} />
         </VStack>

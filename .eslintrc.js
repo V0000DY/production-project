@@ -101,6 +101,7 @@ module.exports = {
         code: 125,
       },
     ],
+    "react/no-unstable-nested-components": "warn",
   },
   globals: {
     __IS_DEV__: true,
