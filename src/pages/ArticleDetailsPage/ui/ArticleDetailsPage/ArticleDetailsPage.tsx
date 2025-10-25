@@ -35,7 +35,7 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
     return null;
   }
 
-  const articleRatingCard = toggleFeatures<JSX.Element>({
+  const articleRatingCard = toggleFeatures({
     name: "isArticleRatingEnabled",
     on: () => <ArticleRating articleId={id} />,
     off: () => <Card>{t("Article rating will come soon")}</Card>,

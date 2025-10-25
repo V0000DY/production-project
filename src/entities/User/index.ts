@@ -1,3 +1,5 @@
+export { saveJsonSettings } from "./model/services/saveJsonSettings";
+export { useJsonSettings } from "./model/selectors/jsonSettings";
 export { UserRole } from "./model/const/userConsts";
 export {
   isUserAdmin,
