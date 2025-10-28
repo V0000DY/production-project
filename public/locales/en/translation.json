@@ -81,5 +81,7 @@
   "ProfileRating_feedback": "Leave the feedback on the profile, it will help improve quality",
   "addFive": "Add 5",
   "Edit article": "Edit article",
-  "Article rating will come soon": "Article rating will come soon"
+  "Article rating will come soon": "Article rating will come soon",
+  "greeting": "Welcome to the article page",
+  "greetingText": "Here you can search and view articles on various topics"
 }

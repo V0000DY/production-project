@@ -734,7 +734,8 @@
       },
       "avatar": "https://cdn-icons-png.flaticon.com/512/924/924915.png",
       "jsonSettings": {
-        "theme": "app_dark_theme"
+        "theme": "app_dark_theme",
+        "isArticlesPageHasBeenOpened": true
       }
     },
     {
@@ -752,7 +753,8 @@
       "jsonSettings": {
         "theme": "app_light_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpened": false
+        "settingsPageHasBeenOpened": false,
+        "isArticlesPageHasBeenOpened": true
       }
     },
     {
@@ -770,7 +772,8 @@
       "jsonSettings": {
         "theme": "app_orange_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpened": false
+        "settingsPageHasBeenOpened": false,
+        "isArticlesPageHasBeenOpened": true
       }
     },
     {
@@ -788,7 +791,8 @@
       "jsonSettings": {
         "theme": "app_orange_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpened": false
+        "settingsPageHasBeenOpened": false,
+        "isArticlesPageHasBeenOpened": true
       }
     }
   ],
