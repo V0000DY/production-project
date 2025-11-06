@@ -9,6 +9,8 @@ import { SidebarItem } from "../SidebarItem/SidebarItem";
 import { getSidebarItems } from "../../model/selectors/getSidebarItems";
 import { ThemeSwitcher } from "@/features/ThemeSwitcher";
 import { LangSwitcher } from "@/features/LangSwitcher";
+import { ToggleFeatures } from "@/shared/lib/features";
+import { RedesignedSidebar } from "../RedesignedSidebar/RedesignedSidebar";
 
 interface SidebarProps {
   className?: string;
@@ -31,30 +33,36 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
   );
 
   return (
-    <aside
-      data-testid="sidebar"
-      className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
-        className,
-      ])}
-    >
-      <Button
-        data-testid="sidebar-toggle"
-        type="button"
-        onClick={onToggle}
-        className={cls.collapseBtn}
-        theme={ButtonTheme.BACKGROUND_INVERTED}
-        size={ButtonSize.L}
-        square
-      >
-        {collapsed ? ">" : "<"}
-      </Button>
-      <VStack role="navigation" gap="8" className={cls.items}>
-        {itemList}
-      </VStack>
-      <div className={cls.switchers}>
-        <ThemeSwitcher />
-        <LangSwitcher className={cls.lang} short={collapsed} />
-      </div>
-    </aside>
+    <ToggleFeatures
+      feature="isAppRedesigned"
+      on={<RedesignedSidebar />}
+      off={
+        <aside
+          data-testid="sidebar"
+          className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
+            className,
+          ])}
+        >
+          <Button
+            data-testid="sidebar-toggle"
+            type="button"
+            onClick={onToggle}
+            className={cls.collapseBtn}
+            theme={ButtonTheme.BACKGROUND_INVERTED}
+            size={ButtonSize.L}
+            square
+          >
+            {collapsed ? ">" : "<"}
+          </Button>
+          <VStack role="navigation" gap="8" className={cls.items}>
+            {itemList}
+          </VStack>
+          <div className={cls.switchers}>
+            <ThemeSwitcher />
+            <LangSwitcher className={cls.lang} short={collapsed} />
+          </div>
+        </aside>
+      }
+    />
   );
 });
