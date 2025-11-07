@@ -1,7 +1,7 @@
 import { memo, useState } from "react";
 import { classNames } from "@/shared/lib/ClassNames/classNames";
 import cls from "./RedesignedSidebar.module.scss";
-import { AppLogo } from "@/shared/ui/AppLogo";
+import { AppLogo } from "@/shared/ui/deprecated/AppLogo";
 
 interface Props {
   className?: string;

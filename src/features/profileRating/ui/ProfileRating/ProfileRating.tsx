@@ -7,7 +7,7 @@ import {
   useGetProfileRating,
   useRateProfile,
 } from "../../api/profileRatingApi";
-import { Skeleton } from "@/shared/ui/Skeleton";
+import { Skeleton } from "@/shared/ui/deprecated/Skeleton";
 
 export interface ProfileRatingProps {
   className?: string;

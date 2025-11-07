@@ -1,7 +1,7 @@
 import { t } from "i18next";
 import { HTMLAttributeAnchorTarget, memo } from "react";
 import { classNames } from "@/shared/lib/ClassNames/classNames";
-import { Text, TextSize } from "@/shared/ui/Text";
+import { Text, TextSize } from "@/shared/ui/deprecated/Text";
 import { Article } from "../../model/types/article";
 import cls from "./ArticleList.module.scss";
 import { ArticleListItem } from "../ArticleListItem/ArticleListItem";
