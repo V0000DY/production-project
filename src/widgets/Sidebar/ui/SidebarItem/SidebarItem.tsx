@@ -10,8 +10,8 @@ import { getUserAuthData } from "@/entities/User";
 import { SidebarItemType } from "../../model/types/sidebar";
 import cls from "./SidebarItem.module.scss";
 import { ToggleFeatures } from "@/shared/lib/features";
-import { AppLink } from "@/shared/ui/redesigned/AppLink";
 import { Icon } from "@/shared/ui/redesigned/Icon";
+import { AppLink } from "@/shared/ui/redesigned/AppLink";
 
 interface SidebarItemProps {
   item: SidebarItemType;

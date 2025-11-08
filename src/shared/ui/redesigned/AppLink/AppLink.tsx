@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import { LinkProps, NavLink } from "react-router-dom";
-import { memo, ReactNode } from "react";
+import { forwardRef, ReactNode } from "react";
 import { classNames } from "@/shared/lib/ClassNames/classNames";
 import cls from "./AppLink.module.scss";
 
@@ -12,28 +13,31 @@ interface AppLinkProps extends LinkProps {
   activeClassName?: string;
 }
 
-export const AppLink = memo((props: AppLinkProps) => {
-  const {
-    to,
-    className,
-    children,
-    variant = "primary",
-    activeClassName = "",
-    ...otherProps
-  } = props;
+export const AppLink = forwardRef<HTMLAnchorElement, AppLinkProps>(
+  (props, ref) => {
+    const {
+      to,
+      className,
+      children,
+      variant = "primary",
+      activeClassName = "",
+      ...otherProps
+    } = props;
 
-  return (
-    <NavLink
-      to={to}
-      className={({ isActive }) =>
-        classNames(cls.AppLink, { [activeClassName]: isActive }, [
-          className,
-          cls[variant],
-        ])
-      }
-      {...otherProps}
-    >
-      {children}
-    </NavLink>
-  );
-});
+    return (
+      <NavLink
+        to={to}
+        className={({ isActive }) =>
+          classNames(cls.AppLink, { [activeClassName]: isActive }, [
+            className,
+            cls[variant],
+          ])
+        }
+        ref={ref}
+        {...otherProps}
+      >
+        {children}
+      </NavLink>
+    );
+  },
+);

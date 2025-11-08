@@ -2,7 +2,7 @@ import { memo, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { classNames } from "@/shared/lib/ClassNames/classNames";
-import { Dropdown } from "@/shared/ui/deprecated/Popups";
+import { Dropdown as DropdownDeprecated } from "@/shared/ui/deprecated/Popups";
 import { getRouteAdminPanel, getRouteProfile } from "@/shared/const/router";
 import {
   getUserAuthData,
@@ -10,7 +10,10 @@ import {
   isUserManager,
   userActions,
 } from "@/entities/User";
-import { Avatar } from "@/shared/ui/deprecated/Avatar";
+import { Avatar as AvatarDeprecated } from "@/shared/ui/deprecated/Avatar";
+import { ToggleFeatures } from "@/shared/lib/features";
+import { Avatar } from "@/shared/ui/redesigned/Avatar";
+import { Dropdown } from "@/shared/ui/redesigned/Popups";
 
 interface AvatarDropdownProps {
   className?: string;
@@ -35,21 +38,38 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
     return null;
   }
 
+  const items = [
+    ...(isAdminPanelAvailable
+      ? [{ content: t("Admin"), href: getRouteAdminPanel() }]
+      : []),
+    { content: t("Exit"), onClick: onLogout },
+    {
+      content: t("Profile"),
+      href: getRouteProfile(authData.id),
+    },
+  ];
+
   return (
-    <Dropdown
-      className={classNames("", {}, [className])}
-      items={[
-        ...(isAdminPanelAvailable
-          ? [{ content: t("Admin"), href: getRouteAdminPanel() }]
-          : []),
-        { content: t("Exit"), onClick: onLogout },
-        {
-          content: t("Profile"),
-          href: getRouteProfile(authData.id),
-        },
-      ]}
-      trigger={<Avatar fallbackInverted size={2} src={authData.avatar} />}
-      direction="bottom left"
+    <ToggleFeatures
+      feature="isAppRedesigned"
+      on={
+        <Dropdown
+          className={classNames("", {}, [className])}
+          items={items}
+          trigger={<Avatar size={3} src={authData.avatar} />}
+          direction="bottom left"
+        />
+      }
+      off={
+        <DropdownDeprecated
+          className={classNames("", {}, [className])}
+          items={items}
+          trigger={
+            <AvatarDeprecated fallbackInverted size={2} src={authData.avatar} />
+          }
+          direction="bottom left"
+        />
+      }
     />
   );
 });
