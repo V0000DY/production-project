@@ -1,7 +1,8 @@
 .ArticlesPage {
   min-height: 100%;
+  
+  .list {
+    margin-block-start: 2rem;
+  }
 }
 
-.list {
-  margin-block-start: 2rem;
-}
