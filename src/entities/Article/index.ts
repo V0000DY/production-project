@@ -1,4 +1,4 @@
-export { ArticleBlockType } from "./model/types/article";
+export { ArticleBlockType } from "./model/consts/articleConsts";
 export {
   ArticleSortField,
   ArticleType,
