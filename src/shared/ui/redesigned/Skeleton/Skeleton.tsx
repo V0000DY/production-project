@@ -13,8 +13,8 @@ export const Skeleton = memo((props: SkeletonProps) => {
   const { className, height, width, border } = props;
 
   const styles: CSSProperties = {
-    height: `${height}rem`,
-    width: `${width}rem`,
+    width,
+    height,
     borderRadius: border,
   };
 

@@ -18,16 +18,14 @@ export const Avatar = ({ className, src, size = 6, alt }: AvatarProps) => {
 
   const styles = useMemo<CSSProperties>(
     () => ({
-      width: `${size}rem`,
-      height: `${size}rem`,
+      width: size,
+      height: size,
     }),
     [size],
   );
 
   const fallback = <Skeleton border="50%" width={size} height={size} />;
-  const errorFallback = (
-    <Icon Svg={UserIcon} width={`${size}rem`} height={`${size}rem`} />
-  );
+  const errorFallback = <Icon width={size} height={size} Svg={UserIcon} />;
 
   return (
     <AppImage

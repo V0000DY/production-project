@@ -1,8 +1,10 @@
 import { memo, useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { ListBox } from "@/shared/ui/deprecated/Popups";
+import { ListBox as ListBoxDeprecated } from "@/shared/ui/deprecated/Popups";
 import { classNames } from "@/shared/lib/ClassNames/classNames";
 import { Currency } from "../../model/types/currency";
+import { ToggleFeatures } from "@/shared/lib/features";
+import { ListBox } from "@/shared/ui/redesigned/Popups";
 
 interface CurrencySelectProps {
   className?: string;
@@ -30,15 +32,32 @@ export const CurrencySelect = memo(
     );
 
     return (
-      <ListBox
-        className={classNames("", {}, [className])}
-        value={value}
-        defaultValue={t("profile_Currency")}
-        items={options}
-        onChange={onChangeHandler}
-        readonly={readonly}
-        direction="top right"
-        label={t("profile_Currency")}
+      <ToggleFeatures
+        feature="isAppRedesigned"
+        on={
+          <ListBox
+            className={classNames("", {}, [className])}
+            value={value}
+            defaultValue={t("profile_Currency")}
+            items={options}
+            onChange={onChangeHandler}
+            readonly={readonly}
+            direction="top right"
+            label={t("profile_Currency")}
+          />
+        }
+        off={
+          <ListBoxDeprecated
+            className={classNames("", {}, [className])}
+            value={value}
+            defaultValue={t("profile_Currency")}
+            items={options}
+            onChange={onChangeHandler}
+            readonly={readonly}
+            direction="top right"
+            label={t("profile_Currency")}
+          />
+        }
       />
     );
   },
