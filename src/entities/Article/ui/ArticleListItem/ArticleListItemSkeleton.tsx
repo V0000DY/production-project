@@ -7,6 +7,7 @@ import { Skeleton as SkeletonRedesigned } from "@/shared/ui/redesigned/Skeleton"
 import cls from "./ArticleListItem.module.scss";
 import { ArticleView } from "../../model/consts/articleConsts";
 import { ToggleFeatures } from "@/shared/lib/features";
+import { VStack } from "@/shared/ui/redesigned/Stack";
 
 interface ArticleListItemSkeletonProps {
   className?: string;
@@ -23,7 +24,7 @@ export const ArticleListItemSkeleton = memo(
           feature="isAppRedesigned"
           on={
             <div
-              className={classNames(cls.ArticleListItem, {}, [
+              className={classNames(cls.ArticleListItemRedesigned, {}, [
                 className,
                 cls[view],
               ])}
@@ -102,21 +103,19 @@ export const ArticleListItemSkeleton = memo(
             ])}
           >
             <CardRedesigned>
-              <div className={cls.imageWrapper}>
+              <VStack gap="8">
                 <SkeletonRedesigned
                   className={cls.img}
                   width={200}
                   height={200}
                 />
-              </div>
-              <div className={cls.infoWrapper}>
                 <SkeletonRedesigned width={130} height={16} />
-              </div>
-              <SkeletonRedesigned
-                className={cls.title}
-                width={148}
-                height={16}
-              />
+                <SkeletonRedesigned
+                  className={cls.title}
+                  width={148}
+                  height={16}
+                />
+              </VStack>
             </CardRedesigned>
           </div>
         }
