@@ -83,5 +83,9 @@
   "Edit article": "Edit article",
   "Article rating will come soon": "Article rating will come soon",
   "greeting": "Welcome to the article page",
-  "greetingText": "Here you can search and view articles on various topics"
+  "greetingText": "Here you can search and view articles on various topics",
+  "Redesigned": "Redesigned",
+  "Deprecated": "Deprecated",
+  "UiDesignSwitcher": "Interface variant",
+  "Settings": "Settings"
 }
