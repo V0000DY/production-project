@@ -87,5 +87,9 @@
   "Redesigned": "Новый",
   "Deprecated": "Старый",
   "UiDesignSwitcher": "Вариант интерфейса",
-  "Settings": "Настройки"
+  "Settings": "Настройки",
+  "{{count}} Views_zero": "{{count}} просмотров",
+  "{{count}} Views_one": "{{count}} просмотр",
+  "{{count}} Views_few": "{{count}} просмотрa",
+  "{{count}} Views_many": "{{count}} просмотров"
 }

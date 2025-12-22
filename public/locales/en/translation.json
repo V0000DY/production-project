@@ -87,5 +87,8 @@
   "Redesigned": "Redesigned",
   "Deprecated": "Deprecated",
   "UiDesignSwitcher": "Interface variant",
-  "Settings": "Settings"
+  "Settings": "Settings",
+  "{{count}} Views_zero": "{{count}} views",
+  "{{count}} Views_one": "{{count}} view",
+  "{{count}} Views_other": "{{count}} views"
 }

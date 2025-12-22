@@ -43,6 +43,9 @@
   "Small": "",
   "Thanks for rating": "",
   "UiDesignSwitcher": "",
+  "Views": "",
+  "Views {{count}}": "",
+  "Views {{count}}_plural": "",
   "Your feedback": "",
   "about": "about",
   "addFive": "",
@@ -85,5 +88,7 @@
   "throw-error": "throw-error",
   "title": "",
   "toggle": "",
-  "views": ""
+  "views": "",
+  "{{count}} Views": "",
+  "{{count}} Views_plural": ""
 }
