@@ -104,30 +104,59 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 
   if (isLoading) {
     content = (
-      <>
-        <SkeletonDeprecated
-          className={cls.avatar}
-          width={12.5}
-          height={12.5}
-          border="50%"
-        />
-        <SkeletonDeprecated className={cls.title} width={19} height={1.5} />
-        <SkeletonDeprecated className={cls.skeleton} width={37.5} height={2} />
-        <SkeletonDeprecated
-          className={cls.skeleton}
-          width="100%"
-          height={12.5}
-        />
-        <SkeletonDeprecated
-          className={cls.skeleton}
-          width="100%"
-          height={12.5}
-        />
-      </>
+      <ToggleFeatures
+        feature="isAppRedesigned"
+        on={
+          <VStack gap="16" max>
+            <Skeleton
+              className={cls.avatar}
+              width={200}
+              height={200}
+              border="50%"
+            />
+            <Skeleton className={cls.title} width={300} height={32} />
+            <Skeleton className={cls.skeleton} width={600} height={24} />
+            <Skeleton className={cls.skeleton} width="100%" height={200} />
+            <Skeleton className={cls.skeleton} width="100%" height={200} />
+          </VStack>
+        }
+        off={
+          <VStack gap="16" max>
+            <SkeletonDeprecated
+              className={cls.avatar}
+              width={12.5}
+              height={12.5}
+              border="50%"
+            />
+            <SkeletonDeprecated className={cls.title} width={19} height={2} />
+            <SkeletonDeprecated
+              className={cls.skeleton}
+              width={37.5}
+              height={1.5}
+            />
+            <SkeletonDeprecated
+              className={cls.skeleton}
+              width="100%"
+              height={12.5}
+            />
+            <SkeletonDeprecated
+              className={cls.skeleton}
+              width="100%"
+              height={12.5}
+            />
+          </VStack>
+        }
+      />
     );
   } else if (error) {
     content = (
-      <TextDeprecated title={t("article_error")} align={TextAlign.CENTER} />
+      <ToggleFeatures
+        feature="isAppRedesigned"
+        on={<Text title={t("article_error")} align="center" />}
+        off={
+          <TextDeprecated title={t("article_error")} align={TextAlign.CENTER} />
+        }
+      />
     );
   } else {
     content = (

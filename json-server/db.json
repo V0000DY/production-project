@@ -718,6 +718,12 @@
       "userId": "4",
       "text": "Test text from cypress",
       "id": "1U9fEdn"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eligendi eaque sapiente reprehenderit excepturi itaque similique qui labore eius dolorum repellendus, culpa libero nihil quod enim officia alias optio eveniet. Eius, nostrum nesciunt atque veniam impedit nam repellat eos unde. Unde repellat, ipsa aspernatur animi placeat veritatis. Nisi accusamus harum optio blanditiis, nam explicabo nemo laboriosam nostrum, inventore, natus id? Eius aperiam minus quod dolorem, placeat illum earum provident debitis vitae dignissimos pariatur maiores eos temporibus exercitationem quo at? Veritatis enim totam voluptatum deleniti perferendis quo asperiores quibusdam natus consequuntur. Excepturi hic ullam aliquid consequuntur distinctio enim accusamus consectetur, voluptates earum voluptatem saepe ut unde, amet facere, debitis eos illum sunt ad repellat illo. Dolorum labore perspiciatis laudantium voluptatum natus. Veritatis natus odio officia consequatur ea dolorem corrupti ipsum ratione architecto! Consequuntur, blanditiis harum voluptatibus voluptatem incidunt quam nulla culpa dignissimos velit! Veritatis, soluta optio nobis sed fuga delectus totam! Libero corporis accusamus consectetur, suscipit nostrum earum sit placeat sapiente deserunt totam rem ut repellendus adipisci corrupti, veritatis laudantium quae officiis dolore culpa. At, nostrum expedita adipisci accusamus modi aut. Corporis consequuntur unde neque reprehenderit eveniet expedita molestiae eaque dolor, porro veritatis ducimus vel fugit. Tenetur itaque vero, corrupti sed fugit deleniti ipsa est quam soluta. Aliquam tenetur itaque architecto. Amet perferendis numquam ducimus atque. Error officia rerum dolorum harum voluptates! Esse architecto dolor aspernatur quasi accusantium debitis, sunt sapiente at quo dolores totam non enim maxime quidem facere porro. Sed iste itaque ea velit officiis atque! Obcaecati praesentium at similique architecto eligendi nihil eius possimus eaque excepturi impedit culpa iure error libero ratione, blanditiis numquam recusandae voluptates enim. Similique! Sunt, explicabo voluptatum voluptates illo nisi omnis aut voluptatem nobis corrupti, incidunt nihil eveniet, nesciunt modi. Est, minima nihil possimus harum dolorum quae voluptatum impedit praesentium delectus iusto quod natus? Obcaecati natus ipsa, nihil voluptates commodi autem voluptas expedita nostrum, aspernatur minima incidunt praesentium, et sunt quasi! A est harum, possimus doloremque excepturi, illo dolore sequi iure, quasi voluptate nostrum. Iure veritatis quam amet maiores unde vel esse culpa at, nobis expedita voluptates inventore nam repudiandae? Placeat est at a expedita recusandae accusantium fugiat possimus unde esse, blanditiis sint eum? Dolore, saepe quod, aliquid aspernatur beatae soluta minus iure, dolores itaque quos ullam? Vel ea ab repellendus expedita sequi autem animi cum beatae repellat, deleniti id veritatis porro, rem consectetur! Natus reprehenderit explicabo sequi consequuntur laudantium voluptates quia expedita atque repellat a perspiciatis esse, provident hic at pariatur perferendis facere dignissimos odio odit debitis corporis eum ut. Natus, veniam adipisci! Quae pariatur saepe esse nulla. Nam libero beatae laborum porro mollitia iure, fuga esse, illum voluptatibus alias delectus eius amet culpa aspernatur ducimus tempora eveniet eum cumque commodi nesciunt quae!",
+      "id": "U4qe4C7"
     }
   ],
   "users": [
@@ -735,7 +741,7 @@
       },
       "avatar": "https://cdn-icons-png.flaticon.com/512/924/924915.png",
       "jsonSettings": {
-        "theme": "app_light_theme",
+        "theme": "app_dark_theme",
         "isArticlesPageHasBeenOpened": true
       }
     },
@@ -885,6 +891,13 @@
       "rate": 3,
       "feedback": "",
       "id": "ftHrcGV"
+    },
+    {
+      "userId": "1",
+      "articleId": "14",
+      "rate": 2,
+      "feedback": "",
+      "id": "hlOkNex"
     }
   ],
   "profile-ratings": [
