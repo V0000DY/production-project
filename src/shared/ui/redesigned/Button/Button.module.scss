@@ -1,3 +1,8 @@
+.addonLeft svg,
+.addonRight svg {
+  color: var(--hint-redesigned);
+}
+
 .Button {
   display: flex;
   align-items: center;
@@ -8,7 +13,8 @@
   &:hover {
     color: var(--accent-redesigned);
 
-    .addonLeft svg, .addonRight svg {
+    .addonLeft svg,
+    .addonRight svg {
       color: var(--accent-redesigned);
     }
   }
@@ -18,12 +24,9 @@
   padding: 0 1rem;
 }
 
-.addonLeft, .addonRight {
+.addonLeft,
+.addonRight {
   display: flex;
-}
-
-.addonLeft svg, .addonRight svg {
-  color: var(--hint-redesigned);
 }
 
 .clear {
@@ -45,8 +48,16 @@
   border: 2px solid var(--icon-redesigned);
   border-radius: 34px;
 
-  &:hover {
+  &.normal {
     border: 2px solid var(--accent-redesigned);
+  }
+
+  &.error {
+    border: 2px solid var(--cancel-redesigned);
+  }
+
+  &.success {
+    border: 2px solid var(--save-redesigned);
   }
 }
 

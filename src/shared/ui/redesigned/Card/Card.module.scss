@@ -8,18 +8,19 @@
 
 .normal {
   background: var(--dark-bg-redesigned);
+  border-radius: 0.75rem;
 }
 
 .outlined {
   border: 1px solid var(--accent-redesigned);
 }
 
-.normal {
-    border-radius: 0.75rem;
+.round {
+  border-radius: 2.5rem;
 }
 
-.round {
-    border-radius: 2.5rem;
+.partial {
+  border-radius: 1.25rem;
 }
 
 .light {

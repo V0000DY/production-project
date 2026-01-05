@@ -66,7 +66,7 @@ export const ProfileCardRedesigned = (props: ProfileCardProps) => {
   } = props;
 
   return (
-    <Card max padding="24" className={className}>
+    <Card max padding="24" className={className} border="partial">
       <VStack gap="32">
         {data?.avatar && (
           <HStack justify="center" max>
