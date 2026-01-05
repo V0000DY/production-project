@@ -7,22 +7,23 @@
 }
 
 .left {
- grid-area: left;
+  grid-area: left;
 }
 
 .content {
- grid-area: content;
- max-width: 75rem;
- justify-self: center;
- width: 100%;
+  grid-area: content;
+  max-width: 75rem;
+  justify-self: center;
+  width: 100%;
 }
 
 .right {
- grid-area: right;
+  grid-area: right;
 }
 
-.left, .right {
- position: sticky;
- top: 2rem;
- height: fit-content;
+.left,
+.right {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
 }
