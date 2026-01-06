@@ -29,7 +29,7 @@ export const ArticleListItemSkeleton = memo(
                 cls[view],
               ])}
             >
-              <CardRedesigned>
+              <CardRedesigned border="round" className={cls.card}>
                 <div className={cls.header}>
                   <SkeletonRedesigned border="50%" height={32} width={32} />
                   <SkeletonRedesigned
@@ -62,7 +62,7 @@ export const ArticleListItemSkeleton = memo(
                 cls[view],
               ])}
             >
-              <CardDeprecated>
+              <CardDeprecated className={cls.card}>
                 <div className={cls.header}>
                   <SkeletonDeprecated border="50%" height={2} width={2} />
                   <SkeletonDeprecated
@@ -102,7 +102,7 @@ export const ArticleListItemSkeleton = memo(
               cls[view],
             ])}
           >
-            <CardRedesigned>
+            <CardRedesigned border="round" className={cls.card}>
               <VStack gap="8">
                 <SkeletonRedesigned
                   className={cls.img}
@@ -126,7 +126,7 @@ export const ArticleListItemSkeleton = memo(
               cls[view],
             ])}
           >
-            <CardDeprecated>
+            <CardDeprecated className={cls.card}>
               <div className={cls.imageWrapper}>
                 <SkeletonDeprecated
                   className={cls.img}
