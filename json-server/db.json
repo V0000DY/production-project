@@ -737,7 +737,7 @@
       "features": {
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true,
-        "isAppRedesigned": true
+        "isAppRedesigned": false
       },
       "avatar": "https://cdn-icons-png.flaticon.com/512/924/924915.png",
       "jsonSettings": {

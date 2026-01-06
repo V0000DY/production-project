@@ -5,7 +5,7 @@ import cls from "./RedesignedSidebar.module.scss";
 import { AppLogo } from "@/shared/ui/redesigned/AppLogo";
 import { VStack } from "@/shared/ui/redesigned/Stack";
 import { SidebarItem } from "../SidebarItem/SidebarItem";
-import { getSidebarItems } from "../../model/selectors/getSidebarItems";
+import { useSidebarItems } from "../../model/selectors/getSidebarItems";
 import { Icon } from "@/shared/ui/redesigned/Icon";
 import ArrowIcon from "@/shared/assets/icons/arrow-bottom.svg";
 import { ThemeSwitcher } from "@/features/ThemeSwitcher";
@@ -18,7 +18,7 @@ interface Props {
 export const RedesignedSidebar = memo((props: Props) => {
   const { className } = props;
   const [collapsed, setCollapsed] = useState(false);
-  const sidebarItemsList = useSelector(getSidebarItems);
+  const sidebarItemsList = useSelector(useSidebarItems);
 
   const itemList = useMemo(
     () =>
