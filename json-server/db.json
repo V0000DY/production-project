@@ -741,7 +741,7 @@
       },
       "avatar": "https://cdn-icons-png.flaticon.com/512/924/924915.png",
       "jsonSettings": {
-        "theme": "app_orange_theme",
+        "theme": "app_dark_theme",
         "isArticlesPageHasBeenOpened": true
       }
     },
